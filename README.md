@@ -13,7 +13,7 @@ Thus far, we have been manually tracking state-level executive orders issued by 
 To create the NPI Index, each NPI was assigned a numerical value to represent its “strictness,” based on our knowledge of epidemiology and human behavior. See the table below for the values assigned to each NPI.
 
 | NPI Type        | Executive Order    | Sources | Index Value  |
-|:--------------- |:------------------ |:------------:|
+|:--------------- |:------------------ |:------------:|:------------:|
 | Social distancing | Mass gathering restrictions (1000 people) | 5 | NGA |
 | | Mass gathering restrictions (250 people) | 6 | NGA |
 | | Mass gathering restrictions (100 people) | 7 | NGA |
