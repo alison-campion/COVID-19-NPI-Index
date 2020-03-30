@@ -37,6 +37,7 @@ To create the NPI Index, each NPI was assigned a numerical value to represent it
 
 Additional interventions include those that strengthen the capacity of the healthcare system. These interventions are likely to have an effect on reducing the number of deaths due to COVID-19 but less likely to directly affect transmission and number of cases in the population. These variables--along with others--could be assembled into a separate Index focused on the healthcare system.
 
+|     |     |
 |:--------------- |:------------------ |
 | Healthcare system capacity strengthening | Medical licensure relaxation |
 | | Elective surgeries postponed |
@@ -54,4 +55,4 @@ Alison Campion, Research Associate at [Development Data Lab](http://www.devdatal
 
 ## Resources
 * [MITRE](https://c19hcc.org/resource/country-comparison#case_and_death_counts_over_time) 
-* [New Zealand classification](https://covid19.govt.nz/assets/COVID_Alert-levels_v2.pdf) 
+* [New Zealand classification system for NPI](https://covid19.govt.nz/assets/COVID_Alert-levels_v2.pdf) 
