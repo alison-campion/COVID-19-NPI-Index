@@ -1,4 +1,4 @@
-# covid-19-npi-tracker
+# COVID-19-NPI-Index
 Tracking non-pharmaceutical interventions made in the effort to slow the spread of covid-19
 
 ## Description
@@ -13,7 +13,7 @@ Thus far, we have been manually tracking state-level executive orders issued by 
 To create the NPI Index, each NPI was assigned a numerical value to represent its “strictness,” based on our knowledge of epidemiology and human behavior. See the table below for the values assigned to each NPI.
 
 | NPI Type        | Executive Order    | Sources        | Index Value |
-|:--------------- |:------------------ |:--------------:|:------------:|
+|:--------------- |:------------------ |:--------------|:------------:|
 | Social distancing | Mass gathering restrictions (1000 people) |  NGA | 5 |
 | | Mass gathering restrictions (250 people) | NGA | 6 |
 | | Mass gathering restrictions (100 people) | NGA | 7 | 
@@ -53,6 +53,8 @@ Tim Olivier MD, 2020 graduate of the University of Massachusetts Medical School
 Alison Campion, Research Associate at [Development Data Lab](http://www.devdatalab.org/).
 
 
-## Resources
+## Resources  - > add link to MITRE coalition website, papers
 * [MITRE](https://c19hcc.org/resource/country-comparison#case_and_death_counts_over_time) 
 * [New Zealand classification system for NPI](https://covid19.govt.nz/assets/COVID_Alert-levels_v2.pdf) 
+* Hammer and Dance 
+* 
