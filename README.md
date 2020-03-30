@@ -12,28 +12,28 @@ Thus far, we have been manually tracking state-level executive orders issued by 
 ### NPI Index Development
 To create the NPI Index, each NPI was assigned a numerical value to represent its “strictness,” based on our knowledge of epidemiology and human behavior. See the table below for the values assigned to each NPI.
 
-| NPI Type        | Executive Order    | Sources | Index Value  |
-|:--------------- |:------------------ |:------------:|:------------:|
-| Social distancing | Mass gathering restrictions (1000 people) | 5 | NGA |
-| | Mass gathering restrictions (250 people) | 6 | NGA |
-| | Mass gathering restrictions (100 people) | 7 | NGA |
-| | Mass gathering restrictions (50 people) | 8 | NGA |
-| | Mass gathering restrictions (25 people) | 9 | NGA |
-| | Mass gathering restrictions (10 people) | 10 | NGA |
-| | *Telework recommendation* |  | *in progress* |
-| | Restaurant and bar closure (take-out and delivery only) | 15 | NGA |
-| | Non-essential business closure | 15 | NGA |
-| School closure | K-12 school closure | 15 | NGA |
-| | Daycare/preschool closure | 11 | *in progress |
-| | College/university closure | 12 | *in progress* |
-| Population restrictions | Stay at home/indoors ("shelter in place"), **recommended** for certain populations (e.g. age 65+) | 18 | NGA |
-| | Stay at home/indoors ("shelter in place"), **required** for all people (except essential workers) | 20 | NGA |
-| | Curfew | 16 | NGA |
-| | *Travel restrictions, **recommended*** | 12 | *in progress* |
-| | *Travel restrictions, **required*** | 18 | *in progress* |
-| Resource activation | State of Emergency declared | 10 | NGA |
-| | National Guard activation | 10 | NGA |
-| | Major Disaster declaration | 10 | NGA |
+| NPI Type        | Executive Order    | Sources        | Index Value |
+|:--------------- |:------------------ |:--------------:|:------------:|
+| Social distancing | Mass gathering restrictions (1000 people) |  NGA | 5 |
+| | Mass gathering restrictions (250 people) | NGA | 6 |
+| | Mass gathering restrictions (100 people) | NGA | 7 | 
+| | Mass gathering restrictions (50 people) | NGA | 8 | 
+| | Mass gathering restrictions (25 people) | NGA | 9 | 
+| | Mass gathering restrictions (10 people) | NGA | 10 |
+| | *Telework recommendation* | *in progress* |  |
+| | Restaurant and bar closure (take-out and delivery only) | NGA | 15 | 
+| | Non-essential business closure | 15 | NGA | 
+| School closure | K-12 school closure | 15 | NGA | 
+| | Daycare/preschool closure | *in progress* | 11 | 
+| | College/university closure |  *in progress* | 12 |
+| Population restrictions | Stay at home/indoors ("shelter in place"), **recommended** for certain populations (e.g. age 65+) | NGA | 18 | 
+| | Stay at home/indoors ("shelter in place"), **required** for all people (except essential workers) | NGA | 20 | 
+| | Curfew | NGA | 16 | 
+| | *Travel restrictions, **recommended*** | *in progress* | 12 | 
+| | *Travel restrictions, **required*** | *in progress* | 18 | 
+| Resource activation | State of Emergency declared | NGA | 10 | 
+| | National Guard activation | NGA | 10 | 
+| | Major Disaster declaration | NGA | 10 | 
 
 Additional interventions include those that strengthen the capacity of the healthcare system. These interventions are likely to have an effect on reducing the number of deaths due to COVID-19 but less likely to directly affect transmission and number of cases in the population. These variables--along with others--could be assembled into a separate Index focused on the healthcare system.
 
