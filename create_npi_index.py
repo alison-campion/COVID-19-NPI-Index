@@ -84,11 +84,12 @@ for state in ph_codes.index:
         # for each date specified in the range, set this variable to 1
         for d in dates:
             ph_data[state].loc[var, d] = 1
-            
+
 # ---------------------- #
 # Merge in COVID-19 Data #
 # ---------------------- #
 datafiles = os.listdir("COVID-19/csse_covid_19_data/csse_covid_19_daily_reports")
+data = ph_data.copy()
 cases = {}
 for file in datafiles:
     # check to make sure this is a datafile
