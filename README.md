@@ -34,6 +34,7 @@ To create the NPI Index, each NPI was assigned a numerical value to represent it
 | Resource activation | State of Emergency declared | NGA | 10 | 
 | | National Guard activation | NGA | 10 | 
 | | Major Disaster declaration | NGA | 10 | 
+
 *NGA: National Governors' Association
 
 Additional interventions include those that strengthen the capacity of the healthcare system. These interventions are likely to have an effect on reducing the number of deaths due to COVID-19 but less likely to directly affect transmission and number of cases in the population. These variables--along with others--could be assembled into a separate Index focused on the healthcare system.
