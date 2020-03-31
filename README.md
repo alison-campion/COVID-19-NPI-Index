@@ -43,8 +43,8 @@ Additional interventions include those that strengthen the capacity of the healt
 | | Elective surgeries postponed |
 | | 1135 CMS waiver approved |
 
-## Example Output
-Here is our NPI Index calculated for March 30, 2020 for each state in the U.S.
+### Example Output
+This map shows our NPI index calculated for each state in the U.S. for March 30, 2020.
 
 ![alt text](https://github.com/alison-campion/COVID-19-NPI-Index/blob/master/data/npi_index_example.png "Example NPI Index")
 
@@ -66,7 +66,7 @@ Alison Campion, Research Associate at [Development Data Lab](http://www.devdatal
 
 
 ## Resources and References
-* Prem, K et al. The effect of control strategies to reduce social mixing on outcomes of the COVID-19 epidemic in Wuhan, China: a modelling study. The Lancet Public Health. 2020 March 25. [Available here.](https://www.thelancet.com/journals/lanpub/article/PIIS2468-2667(20)30073-6/fulltext).
-* MITRE COVID-19 Healthcare Coalition. Assessing change in COVID-19 case and death rates across different countries. 2020 March 25. [Available here.](https://c19hcc.org/resource/country-comparison#case_and_death_counts_over_time)
-* New Zealand COVID-19 Alert Levels. [Available here.](https://covid19.govt.nz/assets/COVID_Alert-levels_v2.pdf)
-* National Governors Association. What Steps Have States Taken To Address Coronavirus? COVID-19 Updates. [Available here.](https://www.nga.org/coronavirus/)
+* Prem, K et al. The effect of control strategies to reduce social mixing on outcomes of the COVID-19 epidemic in Wuhan, China: a modelling study. The Lancet Public Health. 2020 March 25. [Available here](https://www.thelancet.com/journals/lanpub/article/PIIS2468-2667(20)30073-6/fulltext)/
+* MITRE COVID-19 Healthcare Coalition. Assessing change in COVID-19 case and death rates across different countries. 2020 March 25. [Available here](https://c19hcc.org/resource/country-comparison#case_and_death_counts_over_time)/
+* New Zealand COVID-19 Alert Levels. [Available here](https://covid19.govt.nz/assets/COVID_Alert-levels_v2.pdf)/
+* National Governors Association. What Steps Have States Taken To Address Coronavirus? COVID-19 Updates. [Available here](https://www.nga.org/coronavirus/)/
