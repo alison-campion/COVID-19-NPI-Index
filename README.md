@@ -46,7 +46,10 @@ Additional interventions include those that strengthen the capacity of the healt
 ## Example Output
 Here is our NPI Index calculated for March 30, 2020 for each state in the U.S.
 
-![alt text](https://github.com/alison-campion/COVID-19-NPI-Index/blob/master/data/npi_index_example.pngg "Example NPI Index")
+![GitHub Logo](/data/npi_index_example)
+Format: ![Alt Text](url)
+
+![alt text](https://github.com/alison-campion/COVID-19-NPI-Index/blob/master/data/npi_index_example.png "Example NPI Index")
 
 
 ## Next Steps
