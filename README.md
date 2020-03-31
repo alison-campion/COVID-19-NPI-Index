@@ -12,7 +12,7 @@ Thus far, we have been manually tracking state-level executive orders issued by 
 ### NPI Index Development
 To create the NPI Index, each NPI was assigned a numerical value to represent its “strictness,” based on our knowledge of epidemiology and human behavior. See the table below for the values assigned to each NPI.
 
-| NPI Type        | Executive Order    | Sources        | Index Value |
+| NPI Type        | Executive Order    | Sources*        | Index Value |
 |:--------------- |:------------------ |:--------------|:------------:|
 | Social distancing | Mass gathering restrictions (1000 people) |  NGA | 5 |
 | | Mass gathering restrictions (250 people) | NGA | 6 |
@@ -22,8 +22,8 @@ To create the NPI Index, each NPI was assigned a numerical value to represent it
 | | Mass gathering restrictions (10 people) | NGA | 10 |
 | | *Telework recommendation* | *in progress* |  |
 | | Restaurant and bar closure (take-out and delivery only) | NGA | 15 | 
-| | Non-essential business closure | 15 | NGA | 
-| School closure | K-12 school closure | 15 | NGA | 
+| | Non-essential business closure | NGA | 15 |  
+| School closure | K-12 school closure | NGA |  15 | 
 | | Daycare/preschool closure | *in progress* | 11 | 
 | | College/university closure |  *in progress* | 12 |
 | Population restrictions | Stay at home/indoors ("shelter in place"), **recommended** for certain populations (e.g. age 65+) | NGA | 18 | 
@@ -34,6 +34,7 @@ To create the NPI Index, each NPI was assigned a numerical value to represent it
 | Resource activation | State of Emergency declared | NGA | 10 | 
 | | National Guard activation | NGA | 10 | 
 | | Major Disaster declaration | NGA | 10 | 
+*NGA: National Governors' Association
 
 Additional interventions include those that strengthen the capacity of the healthcare system. These interventions are likely to have an effect on reducing the number of deaths due to COVID-19 but less likely to directly affect transmission and number of cases in the population. These variables--along with others--could be assembled into a separate Index focused on the healthcare system.
 
