@@ -67,7 +67,7 @@ for state in state_list:
     # Primary axis settings
     ax.legend(["Cases", "Deaths"], loc=2, fontsize=12)
     ax.yaxis.grid("--", alpha=0.5)
-    ax.set_ylabel("Number of People", fontsize=12)
+    ax.set_ylabel("Cumulative Case Count", fontsize=12)
     ax.set_xlabel("Date", fontsize=12)
     ax.set_xlim(xlimits)
     f.autofmt_xdate()
