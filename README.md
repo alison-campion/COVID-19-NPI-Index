@@ -51,7 +51,7 @@ This map shows our NPI index calculated for each state in the U.S. for March 30,
 ![alt text](https://github.com/alison-campion/COVID-19-NPI-Index/blob/master/data/npi_index_example.png "Example NPI Index")
 
 This plot shows our NPI index calculated over time for New York State, along with the timing of each individual NPI and the toal cases and deaths per day (as rpoerted by [Johns Hopkins University](https://github.com/CSSEGISandData/COVID-19)).
-![alt text](https://github.com/alison-campion/COVID-19-NPI-Index/blob/master/data/New_York_npi.png "Example state-level data (NY)")
+![alt text](https://github.com/alison-campion/COVID-19-NPI-Index/blob/master/data/New_York_npi_scaled.png "Example state-level data (NY)")
 
 You can compare the timeline of NPI decisions made in New York with Massachusetts to explore how the curve of new cases and deaths is impacted by policy decisions.
 ![alt text](https://github.com/alison-campion/COVID-19-NPI-Index/blob/master/data/Massachusetts_npi.png "Example state-level data (MA)")
