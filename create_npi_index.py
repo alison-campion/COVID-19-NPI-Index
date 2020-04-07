@@ -109,8 +109,7 @@ for file in datafiles:
     state_col = [x for x in df.columns if "State" in x][0]
     
     # keep only the US data
-    df = df.loc[df[country_col] == "US"].reset_index(drop=True)
-    
+    df = df.loc[df[country_col] == "US"].reset_index(drop=True)    
 
     # split off the state from the province column
     temp = df[state_col].str.split(",", expand=True)
@@ -141,13 +140,33 @@ for file in datafiles:
         else:
             cases[state][date] = {"cases": df.loc[state, "Confirmed"],
                                    "deaths": df.loc[state, "Deaths"]}
-            
+
+# --------------------- #
+# Handle Gathering data #
+# --------------------- # 
+for state in state_list:
+    df = data[state].copy()
+    for col in df.columns:
+        if df.loc["G-10", col] == 1:
+            df.loc[["G-25", "G-50", "G-100", "G-250", "G-1000"], col] = np.nan
+        elif df.loc["G-25", col] == 1:
+            df.loc[["G-10", "G-50", "G-100", "G-250", "G-1000"], col] = np.nan
+        elif df.loc["G-50", col] == 1:
+            df.loc[["G-10", "G-25", "G-100", "G-250", "G-1000"], col] = np.nan
+        elif df.loc["G-100", col] == 1:
+            df.loc[["G-10", "G-25", "G-50", "G-250", "G-1000"], col] = np.nan
+        elif df.loc["G-250", col] == 1:
+            df.loc[["G-10", "G-25", "G-50", "G-100", "G-1000"], col] = np.nan
+        elif df.loc["G-1000", col] == 1:
+            df.loc[["G-10", "G-25", "G-50", "G-100", "G-250"], col] = np.nan
+    data[state] = df    
+    
 # convert case dictionaries to dataframes 
 for state, v in cases.items():
     # only add the data if it already exists in the public health data
     if state in list(data.keys()):
         data[state] = data[state].append(pd.DataFrame(v))
-        
+  
 # ------------------- #
 # Calculate NPI Index #
 # ------------------- #       

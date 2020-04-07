@@ -18,7 +18,7 @@ for state in state_list:
     print(f"Createing figure for {state}")
     
     # create figure
-    f, ax = plt.subplots(figsize=[12, 8])
+    f, ax = plt.subplots(figsize=[10, 6], dpi=100)
 
     # get state data 
     df = data[state].copy()
@@ -35,12 +35,15 @@ for state in state_list:
     date_fmt = mpl.dates.DateFormatter('%b %d %Y')
 
     # instantiate a second axes that shares the same x-axis
-    ax2 = ax.twinx()  
+    ax2 = ax.twinx()
+    y_max = 120
+    inc = 8
+    
     height = 0
     for var in df.index:
         if df.loc[var].sum() == 0:
             pass
-        elif ((var == "cases") | (var == "deaths") | (var == "Unnamed: 17") | (var == "FC")):
+        elif ((var == "cases") | (var == "deaths") | (var == "Unnamed: 17") | (var == "Unnamed: 18") | (var == "FC")):
             pass
         else:   
             xrange = list(df.loc[var].dropna().index)
@@ -50,16 +53,16 @@ for state in state_list:
             width = xrange[-1] - xrange[0]
 
             # Plot rectangle
-            length = 0.85
-            rect = mpl.patches.Rectangle((xrange[0], height+1), width, length, color='#ffa600', alpha=0.25)
+            length = (0.85)*inc
+            rect = mpl.patches.Rectangle((xrange[0], height+inc), width, length, color='#ffa600', alpha=0.25)
 
             # Add the patch to the Axes
             ax2.add_patch(rect)
             ax2.text(mpl.dates.date2num(xlimits[1]) + 0.5, 
-                     height + 0.85 + length/2, npi[var]["name"], color='#ffa600', fontsize=14)
+                     height + (0.85)*inc + length/2, npi[var]["name"], color='#ffa600', fontsize=14)
 
             # increment the height counter
-            height = height + 1
+            height = height + inc
 
     # Primary axis settings
     ax.legend(["Cases", "Deaths"], loc=2, fontsize=12)
@@ -67,15 +70,19 @@ for state in state_list:
     ax.set_ylabel("Number of People", fontsize=12)
     ax.set_xlabel("Date", fontsize=12)
     ax.set_xlim(xlimits)
-    ax.xaxis.set_major_locator(mpl.dates.MonthLocator(interval=1))
-    ax.xaxis.set_minor_locator(mpl.dates.DayLocator([5, 10, 15, 20, 25]))
-    ax.xaxis.set_major_formatter(mpl.dates.DateFormatter('%b %Y'))
-    ax.xaxis.set_minor_formatter(mpl.dates.DateFormatter('%d'))
     f.autofmt_xdate()
     ax.set_title(state, fontsize=16)
+    ax2.plot(df.columns, df.loc["npi_index"], color="#fca800")
 
     # secondary axis settings
-    ax2.set_yticks([])
-    ax2.set_ylim(1, height+1)
-    plt.savefig(os.path.join("data", "state_plots", f"{state}_npi.png"), bbox_inches="tight", dpi=300)
+    ax2.spines['right'].set_color('#fca800')
+    ax2.tick_params(axis='y', colors='#fca800')
+    ax2.xaxis.set_major_locator(mpl.dates.MonthLocator(interval=1))
+    ax2.xaxis.set_minor_locator(mpl.dates.DayLocator([5, 10, 15, 20, 25]))
+    ax2.xaxis.set_major_formatter(mpl.dates.DateFormatter('%b %Y'))
+    ax2.xaxis.set_minor_formatter(mpl.dates.DateFormatter('%d'))
+    ax2.set_ylim(1, 130)
+    ax2.set_ylabel("NPI Index", color="#fca800", rotation=270, labelpad=20)
+    plt.savefig(os.path.join("state_plots", f"{state}_npi.png"), bbox_inches="tight", dpi=200)
+
     plt.close('all')
