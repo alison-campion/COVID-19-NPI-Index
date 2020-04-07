@@ -50,6 +50,8 @@ This map shows our NPI index calculated for each state in the U.S. for March 30,
 
 ![alt text](https://github.com/alison-campion/COVID-19-NPI-Index/blob/master/data/npi_index_example.png "Example NPI Index")
 
+This plot shows our NPI index calculated over time for New York State, along with the timing of each individual NPI and the toal cases and deaths per day (as rpoerted by [Johns Hopkins University](https://github.com/CSSEGISandData/COVID-19)).
+![alt text](https://github.com/alison-campion/COVID-19-NPI-Index/blob/master/data/New_York_npi.png "Example state-level data")
 
 ## Next Steps
 There are a few directions we’d like to head next-- we would like to collaborate with others to make these happen:
@@ -72,3 +74,4 @@ Alison Campion, Research Associate at [Development Data Lab](http://www.devdatal
 * MITRE COVID-19 Healthcare Coalition. Assessing change in COVID-19 case and death rates across different countries. 2020 March 25. [Available here](https://c19hcc.org/resource/country-comparison#case_and_death_counts_over_time).
 * New Zealand COVID-19 Alert Levels. [Available here](https://covid19.govt.nz/assets/COVID_Alert-levels_v2.pdf).
 * National Governors Association. What Steps Have States Taken To Address Coronavirus? COVID-19 Updates. [Available here](https://www.nga.org/coronavirus/).
+* Johns Hopkins University global covid-19 database. [Available here](https://github.com/CSSEGISandData/COVID-19).
